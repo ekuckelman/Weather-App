@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import fetchWeather from './Api';
 import CurrentWeather from './CurrentWeather';
+import Search from './Search';
 import SevenHour from './SevenHour';
 import TenDay  from './TenDay';
 import cleanData from './cleanData';
@@ -11,7 +12,7 @@ class App extends Component {
     super(props);
     this.state = {
       cleanData: null,
-      location: 'Denver, CO'
+      location: 'Denver, CO' || ''
     };
 
     this.setLocation = this.setLocation.bind(this);
@@ -20,7 +21,7 @@ class App extends Component {
 
   setLocation(location) {
     this.setState( {location})
-    this.getWeather();
+    this.getWeather(location);
   }
 
   getWeather(location) {
@@ -46,6 +47,7 @@ class App extends Component {
     return (
       this.state.cleanData &&
       <div className='App'>
+        <Search setLocation={this.setLocation} />
         <CurrentWeather cleanData={ this.state.cleanData } />
         <SevenHour cleanData={ this.state.cleanData } />
         <TenDay cleanData={ this.state.cleanData } />

@@ -14,18 +14,18 @@ export default function cleanData(data) {
     },
     sevenHour: data.hourly_forecast.slice(0, 7).map((hour) => {
       return {
-        hour: hour.FCTTIME.civil,
+        time: hour.FCTTIME.civil,
         icon: hour.icon_url,
         tempF: hour.temp.english
-      };
+      }
     }),
     tenDay: data.forecast.simpleforecast.forecastday.map((day)=> {
      return { 
-      day: day.date.weekly,
-      icon: day.icon_url,
-      high: day.high.fahrenheit,
-      low: day.low.fahrenheit
-    };
+        day: day.date.weekday,
+        icon: day.icon_url,
+        high: day.high.fahrenheit,
+        low: day.low.fahrenheit
+    }
   })
 };
   return cleanData;

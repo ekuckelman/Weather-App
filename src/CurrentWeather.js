@@ -11,7 +11,7 @@ export default function CurrentWeather(props) {
                                      {props.cleanData.current.month},
                                      {props.cleanData.current.date} </h3>
         <h2 className="current-temp">{props.cleanData.current.temp}<span>˚</span></h2>  
-        <img className="weather-icon" src={props.cleanData.current.icon}/>
+        <img className="weather-icon" src={props.cleanData.current.icon} alt="weather icon"/>
       </div>
       <div className="todays-conditions">
         <h2 className="expected-conditions">Today's Flying Conditions</h2>

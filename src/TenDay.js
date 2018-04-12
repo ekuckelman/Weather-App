@@ -4,8 +4,19 @@ import './styles/TenDay.css';
 
 export default function TenDay(props) {
   return (
-    <div>
-    <h1>Next Ten Day</h1>
-      { props.cleanData.} 
-    )
+    <div className="tenDay-container">
+      <h1 className='tenDay-title'>Next Ten Days</h1>
+      <div>
+        { props.cleanData.tenDay.map((ten, index)=> {
+          return <Card 
+                    key={ index }
+                    day={ ten.day }
+                    icon={ ten.icon }
+                    high={ ten.high + "˚" }
+                    low={ ten.low + "˚" } />
+          })
+        } 
+      </div>
+    </div>
+  );
 }

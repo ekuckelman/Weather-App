@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import fetchWeather from './Api';
 import CurrentWeather from './CurrentWeather';
 import SevenHour from './SevenHour';
+import TenDay  from './TenDay';
 import cleanData from './cleanData';
 import './styles/App.css';
 
@@ -47,6 +48,7 @@ class App extends Component {
       <div className='App'>
         <CurrentWeather cleanData={ this.state.cleanData } />
         <SevenHour cleanData={ this.state.cleanData } />
+        <TenDay cleanData={ this.state.cleanData } />
       </div>
     )
   }

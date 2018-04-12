@@ -1,6 +1,8 @@
 .today {
   background-color: #f0d09ae3;
-  width: 15em;
+  width: 50em;
+  position: absolute;
+  right: 20em;
 }
 
 .today h2, h3 {

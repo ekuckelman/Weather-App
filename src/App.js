@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import fetchWeather from './Api';
 import CurrentWeather from './CurrentWeather';
+import SevenHour from './SevenHour';
 import cleanData from './cleanData';
 import './styles/App.css';
 
@@ -31,7 +32,7 @@ class App extends Component {
         });
       }
     })
-    //a catch needs to go here
+    //a catch? needs to go here
   }
   componentDidMount() {
     if (this.state.location) {
@@ -44,7 +45,8 @@ class App extends Component {
     return (
       this.state.cleanData &&
       <div className='App'>
-        <CurrentWeather cleanData={this.state.cleanData}/>
+        <CurrentWeather cleanData={ this.state.cleanData } />
+        <SevenHour cleanData={ this.state.cleanData } />
       </div>
     )
   }

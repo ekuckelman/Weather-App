@@ -14,12 +14,14 @@ export default function CurrentWeather(props) {
         <img className="weather-icon" src={props.cleanData.current.icon}/>
       </div>
       <div className="todays-conditions">
-        <h2 className="expected-conditions">Expected Flying Conditions</h2>
+        <h2 className="expected-conditions">Today's Flying Conditions</h2>
         <h2 className="high">{props.cleanData.current.high}<span>˚</span></h2>
         <h2 className="low">{props.cleanData.current.low}<span>˚</span></h2>
+      </div>
       <div className="conditions-summary">
         <h3 className="summary">{props.cleanData.current.summary}</h3>
       </div>  
     </div>
+
   )
 }

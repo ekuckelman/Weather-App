@@ -11,7 +11,22 @@ export default function cleanData(data) {
       date: data.forecast.simpleforecast.forecastday[0].date.day,
       summary: data.forecast.txt_forecast.forecastday[0].fcttext,
       icon: data.current_observation.icon_url
-    }
-  }
+    },
+    sevenHour: data.hourly_forecast.slice(0, 7).map((hour) => {
+      return {
+        hour: hour.FCTTIME.civil,
+        icon: hour.icon_url,
+        tempF: hour.temp.english
+      };
+    }),
+    tenDay: data.forecast.simpleforecast.forecastday.map((day)=> {
+     return { 
+      day: day.date.weekly,
+      icon: day.icon_url,
+      high: day.high.fahrenheit,
+      low: day.low.fahrenheit
+    };
+  })
+};
   return cleanData;
 }

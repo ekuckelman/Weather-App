@@ -8,5 +8,3 @@ const fetchWeather = (location) => {
 }
 
 export default fetchWeather;
-
-// 'http://api.wunderground.com/api/b2e64fbf73098622/geolookup/conditions/q/IA/Cedar_Rapids.json'

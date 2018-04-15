@@ -1,10 +1,68 @@
 .today {
-  background-color: #f0d09ae3;
-  width: 50em;
-  position: absolute;
-  right: 20em;
+  background-color: #f0f0f3e3;
+  border-radius: 15px;
+  margin-top: 5px;
+  color: #7c7d8b;
+  padding: 1.5em;
+  height: fit-content;
 }
 
-.today h2, h3 {
-  color: #51525f;
+.todays-title {
+  text-align: center;
+  font-size: 2.8em;
+  margin: 5px;
+}
+
+.expected {
+  display: flex;
+  justify-content: space-around;
+}
+
+.current-day {
+  margin: 20px;
+  text-align: center;
+}
+
+.current-temp-title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.current-temp {
+  font-size: 2.8em;
+  margin: 0;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.todays-conditions,
+.current-weather {
+  text-align: center;
+}
+
+
+.current-location {
+  font-size: 2em;
+  margin: 2px;
+}
+
+.expected-conditions {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.curr-high,
+.curr-low {
+  margin: 0;
+  display: inline-block;
+  font-size: 2.8em;
+}
+
+.curr-high {
+  color: #cf7f04;
+  margin-right: .5em;
+}
+
+.curr-low {
+  color: #8AA2D0;
 }

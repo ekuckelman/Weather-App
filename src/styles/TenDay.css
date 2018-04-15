@@ -1,15 +1,15 @@
 .tenDay-container {
   background-color: #7c7d8be0;
-  width: fit-content;
+  width: 30em;
   border-radius: 10px;
   margin: 5px;
-  height: 37.8em;
-  padding: 1.5em;
+  height: 33.4em;
+  padding: 1em;
   overflow: scroll;
 }
 
 .day {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 15px 0;
   color: #1A1A1A;
   margin-right: 1em;
@@ -22,15 +22,15 @@
 }
 
 .low {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #8AA2D0;
   margin: 15px;
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .high {
-  font-size: 2em;
-  color: #D2A172;
+  font-size: 1.5em;
+  color: #cf7f04d6;
   margin: 15px;
-  margin-left: 1em;
+  margin-left: 1.5em;
 }

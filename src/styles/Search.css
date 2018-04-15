@@ -2,6 +2,22 @@
   text-align: center;
 }
 
-.search {
+.search-bar {
   width: 60%;
+  -webkit-appearance: none;
+  font-size: 1.5em;
+  border:  solid #f0f0f3e3;
+  outline: none;
+  margin: .5em 0;
+  font-family: 'Courgette', cursive;
+
+}
+
+.search-button {
+  font-size: 1.5em;
+  color: #7c7d8b;
+  padding: 1px 6px;
+  border: solid #f0f0f3e3;
+  outline: none;
+  font-family: 'Courgette', cursive;
 }

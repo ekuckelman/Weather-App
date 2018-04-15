@@ -1,14 +1,29 @@
 import React, {Component} from 'react';
+// import trie from '@ekuckelman/complete-me/lib/trie.js';
+// import cities from './cities';
 import './styles/Search.css';
 
+
 export default class Search extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      userInput: ''
-    }
+      userInput: '',
+      // suggestions: []
+    };
+
+    // this.trie = new trie();
+    // this.trie.populate(cities.data)
     this.setUserLocation = this.setUserLocation.bind(this);
+    // this.giveSuggestions = this.giveSuggestions.bind(this);
   }
+
+  // giveSuggestions(event) {
+  //   this.setState({
+  //     userInput: (event.target.value),
+  //     suggestions: this.trie.suggest(event.target.value)
+  //   });
+  // }
 
 
   setUserLocation() {
@@ -20,13 +35,13 @@ export default class Search extends Component {
     return (
       <div className="search-container">
         <input 
-          className="search" 
+          className="search-bar" 
           type="search"
           placeholder="Enter City, State OR zip code where you want to fly" 
           value={ this.state.userInput }
           onChange={ (event)=> {
             this.setState({
-              userInput: event.target.value
+              userInput: (event.target.value)
               })
             }
           }

@@ -1,7 +1,14 @@
 .seven-hour-container {
-  position: absolute;
   background-color: #7c7d8be0;
-  width: 19em;
+  width: fit-content;
   border-radius: 10px;
-  margin-left: 5px;
+  margin: 5px;
+  padding: 1em;
+  height: fit-content;
+}
+
+.seven-title {
+  text-align: center;
+  color: #f0f0f3e3;
+  font-size: 2.8em;
 }

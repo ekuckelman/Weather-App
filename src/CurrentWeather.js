@@ -4,7 +4,7 @@ import './styles/CurrentWeather.css';
 export default function CurrentWeather(props) {
   return (
     <div className="today">
-      <h2 className="todays-title">{props.cleanData.current.location}'s Flying Conditions</h2>
+      <h2 className="todays-title">{props.cleanData.current.location} Flying Conditions</h2>
       <h2 className="current-day">{props.cleanData.current.day},  <span>  </span>
                                    {props.cleanData.current.month}, <span>  </span>
                                   {props.cleanData.current.date} </h2>

@@ -1,6 +1,6 @@
 .tenDay-container {
   background-color: #7c7d8be0;
-  width: 30em;
+  width: 35em;
   border-radius: 10px;
   margin: 5px;
   height: 33.4em;
@@ -26,11 +26,12 @@
   color: #8AA2D0;
   margin: 15px;
   margin-left: 0;
+  margin-right: 2em;
 }
 
 .high {
   font-size: 1.5em;
   color: #cf7f04d6;
   margin: 15px;
-  margin-left: 1.5em;
+  margin-left: 2.5em;
 }

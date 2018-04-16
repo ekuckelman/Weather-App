@@ -3,8 +3,9 @@
   border-radius: 15px;
   margin-top: 5px;
   color: #7c7d8b;
-  padding: 1em;
+  padding: .5em;
   height: fit-content;
+  width: 35em;
 }
 
 .todays-title {
@@ -33,6 +34,11 @@
   margin: 0;
   margin-right: 10px;
   display: inline-block;
+}
+
+.current-weather {
+  border-right: solid;
+  padding-right: 10px;
 }
 
 .todays-conditions,

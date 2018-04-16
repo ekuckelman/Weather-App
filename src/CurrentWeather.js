@@ -15,7 +15,7 @@ export default function CurrentWeather(props) {
           <img className="weather-icon" src={props.cleanData.current.icon} alt="weather icon"/>
         </div>
         <div className="todays-conditions">
-          <h2 className="expected-conditions">High / Low Today</h2>
+          <h2 className="expected-conditions">High / Low</h2>
           <h2 className="curr-high">{props.cleanData.current.high}<span>˚</span></h2>
           <h2 className="curr-low">{props.cleanData.current.low}<span>˚</span></h2>
         </div>

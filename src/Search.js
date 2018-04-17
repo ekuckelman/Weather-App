@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-// import trie from '@ekuckelman/complete-me/lib/trie.js';
-// import cities from './cities';
 import './styles/Search.css';
 
 
@@ -12,19 +10,8 @@ export default class Search extends Component {
       // suggestions: []
     };
 
-    // this.trie = new trie();
-    // this.trie.populate(cities.data)
     this.setUserLocation = this.setUserLocation.bind(this);
-    // this.giveSuggestions = this.giveSuggestions.bind(this);
   }
-
-  // giveSuggestions(event) {
-  //   this.setState({
-  //     userInput: (event.target.value),
-  //     suggestions: this.trie.suggest(event.target.value)
-  //   });
-  // }
-
 
   setUserLocation() {
     this.props.setLocation(this.state.userInput);
@@ -42,16 +29,16 @@ export default class Search extends Component {
           onChange={ (event)=> {
             this.setState({
               userInput: (event.target.value)
-              })
-            }
+            });
+          }
           }
         />
         <button
-         className="search-button"
-         onClick={this.setUserLocation}>
+          className="search-button"
+          onClick={this.setUserLocation}>
         Accio Weather
         </button>
       </div>
-      )
+    );
   }
 }

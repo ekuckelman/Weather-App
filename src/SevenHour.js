@@ -9,11 +9,11 @@ export default function SevenHour(props) {
       <div>
         { props.cleanData.sevenHour.map((seven, index)=> {
           return <Card 
-                    key={ index }
-                    time={ seven.time }
-                    icon={ seven.icon }
-                    temp={ seven.tempF + "˚" } />;
-          })
+            key={ index }
+            time={ seven.time }
+            icon={ seven.icon }
+            temp={ seven.tempF + "˚" } />;
+        })
         }
       </div>  
     </div>

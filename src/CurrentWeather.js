@@ -5,9 +5,10 @@ export default function CurrentWeather(props) {
   return (
     <div className="today">
       <h2 className="todays-title">{props.cleanData.current.location} Flying Conditions</h2>
-      <h2 className="current-day">{props.cleanData.current.day},  <span>  </span>
-                                   {props.cleanData.current.month}, <span>  </span>
-                                  {props.cleanData.current.date} </h2>
+      <h2 className="current-day">
+        {props.cleanData.current.day},  <span>  </span>
+        {props.cleanData.current.month}, <span>  </span>
+        {props.cleanData.current.date} </h2>
       <div className="expected">
         <div className="current-weather">
           <h2 className="current-temp-title">Current Temperature</h2>
@@ -24,6 +25,5 @@ export default function CurrentWeather(props) {
         <h3 className="summary">Today's Weather: {props.cleanData.current.summary}</h3>
       </div>  
     </div>
-
-  )
+  );
 }

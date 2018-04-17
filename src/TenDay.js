@@ -9,12 +9,12 @@ export default function TenDay(props) {
       <div>
         { props.cleanData.tenDay.map((ten, index)=> {
           return <Card 
-                    key={ index }
-                    day={ ten.day }
-                    icon={ ten.icon }
-                    high={ ten.high + "˚" }
-                    low={ ten.low + "˚" } />
-          })
+            key={ index }
+            day={ ten.day }
+            icon={ ten.icon }
+            high={ ten.high + "˚" }
+            low={ ten.low + "˚" } />;
+        })
         } 
       </div>
     </div>

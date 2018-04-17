@@ -17,16 +17,16 @@ export default function cleanData(data) {
         time: hour.FCTTIME.civil,
         icon: hour.icon_url,
         tempF: hour.temp.english
-      }
+      };
     }),
     tenDay: data.forecast.simpleforecast.forecastday.map((day)=> {
-     return { 
+      return { 
         day: day.date.weekday,
         icon: day.icon_url,
         high: day.high.fahrenheit,
         low: day.low.fahrenheit
-    }
-  })
-};
+      };
+    })
+  };
   return cleanData;
 }

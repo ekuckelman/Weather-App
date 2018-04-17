@@ -1,10 +1,10 @@
 import key from './apiKey';
 
 const root = 'http://api.wunderground.com';
-const extentions = '/conditions/forecast/hourly/geolookup/forecast10day/q/'
+const extentions = '/conditions/forecast/hourly/geolookup/forecast10day/q/';
 
 const fetchWeather = (location) => {
-  return fetch(`${root}/api/${key}${extentions}${location}.json`)
-}
+  return fetch(`${root}/api/${key}${extentions}${location}.json`);
+};
 
 export default fetchWeather;

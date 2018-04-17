@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   setLocation(location) {
-    this.setState({ location })
+    this.setState({ location });
     this.getWeather(location);
   }
 
@@ -32,21 +32,21 @@ class App extends Component {
 
   getWeather(location) {
     fetchWeather(location)
-    .then(response => response.json())
-    .then(weatherInfo => {
-      if (weatherInfo.forecast) {
-        this.setLocalStorage(location);
-        this.setState({
-          fetchError: false,
-          cleanData: cleanData(weatherInfo)
-        });
-      } else {
+      .then(response => response.json())
+      .then(weatherInfo => {
+        if (weatherInfo.forecast) {
+          this.setLocalStorage(location);
+          this.setState({
+            fetchError: false,
+            cleanData: cleanData(weatherInfo)
+          });
+        } else {
+          this.setState({ fetchError: true });
+        }
+      })
+      .catch(() => {
         this.setState({ fetchError: true });
-      }
-    })
-    .catch(() => {
-      this.setState({ fetchError: true });
-    });
+      });
   }
 
   componentDidMount() {
@@ -73,7 +73,7 @@ class App extends Component {
           </div>
         }
       </div>
-    )
+    );
   }
 } 
 

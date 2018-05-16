@@ -35,3 +35,38 @@
   margin: 15px;
   margin-left: 2.5em;
 }
+
+@media screen and (max-width: 1200px) {
+  .tenDay-title {
+    font-size: 2.5em;
+  }
+
+  .low {
+    margin-right: 0;
+    margin-left: 1em;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .high {
+    margin-left: 2em;
+  }
+
+  .day {
+    font-size: 1.3em;
+  }
+
+  .tenDay-container {
+    height: 30.8em;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .high {
+    margin-left: 1em;
+  }
+
+  .tenDay-container {
+    height: 33.7em;
+  }
+}

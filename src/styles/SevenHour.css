@@ -12,3 +12,15 @@
   color: #f0f0f3e3;
   font-size: 2.8em;
 }
+
+@media screen and (max-width: 1173px) {
+  .seven-title {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .seven-hour-container {
+    height: 33.7em;
+  }
+}

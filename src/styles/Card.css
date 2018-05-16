@@ -29,3 +29,10 @@
 .seven-icon {
   margin-right: 2em;
 }
+
+@media screen and (max-width: 1130px) {
+  .time,
+  .temp {
+    font-size: 1.3em;
+  }
+}

@@ -72,6 +72,12 @@
   color: #8AA2D0;
 }
 
+@media screen and (max-width: 1200px) {
+  .todays-title {
+    font-size: 2.5em;
+  }
+}
+
 @media screen and (max-width: 1060px) {
   .expected {
     display: block;

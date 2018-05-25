@@ -13,7 +13,7 @@
   font-size: 2.8em;
 }
 
-@media screen and (max-width: 1173px) {
+@media screen and (max-width: 1200px) {
   .seven-title {
     font-size: 2.5em;
   }

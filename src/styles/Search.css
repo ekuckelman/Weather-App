@@ -21,3 +21,9 @@
   outline: none;
   font-family: 'Courgette', cursive;
 }
+
+@media screen and (max-width: 1160px) {
+  .search-bar {
+    width: 70%;
+  }
+}
